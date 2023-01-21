@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css">
+        <title>MV3 | FormTest</title>
+    </head>
+    <body>
+        <div id="container-menu">
+            <div class="container-component">
+                <div id="container-header">
+                    <figure>
+                        <img src="./images/mv3-logo.png" alt="Logo MV3" title="MV3 Tecnologia"/>
+                    </figure>
+                    <div>FormTest</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-page">
+            <div class="container-component">
+                <div class="container-title">
+                    <h1>
+                        Dados Cadastrados:
+                    </h1>
+                    <div>
+                        <button onclick="location.href = 'new.html'">
+                            Novo
+                        </button>
+                        <button onclick="resetTable()">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+                <div id="container-table-itens">
+                    <table id="table-itens">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Nome
+                                </th>
+                                <th>
+                                    Data Nascimento
+                                </th>
+                                <th>
+                                    Telefone
+                                </th>
+                                <th>
+                                    E-mail
+                                </th>
+                                <th>
+                                    Endereço
+                                </th>
+                                <th>
+                                    Empresa
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Desenvolvido por Gabriel Augusto | MV3 Tecnologia.
+        </footer>
+        <script src="./scripts/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/new.css">
+        <title>MV3 | FormTest</title>
+    </head>
+    <body>
+        <div id="container-menu">
+            <div class="container-component">
+                <figure>
+                    <img src="./images/mv3-logo.png" alt="Logo MV3" title="MV3 Tecnologia"/>
+                </figure>
+            </div>
+        </div>
+        <div class="container-page">
+            <div class="container-component">
+                <div class="container-title">
+                    <h1>
+                        Novo Cadastro:
+                    </h1>
+                    <div>
+                        <button onclick="location.href = 'index.html'">
+                            Voltar
+                        </button>
+                    </div>
+                </div>
+                <div id="container-table-itens">
+                    <form id="form_new">
+                        <div class="container_component_form">
+                            <label for="text_nome">Nome completo:</label>
+                            <input required id="text_nome" type="text" placeholder="Digite aqui o nome completo..."/>
+                        </div>
+                        <div class="container_component_form">
+                            <label for="date_nascimento">Data de nascimento:</label>
+                            <input required id="date_nascimento" type="date" placeholder="Digite aqui a data de nascimento..."/>
+                        </div>
+                        <div class="container_component_form">
+                            <label for="text_tell">Telefone:</label>
+                            <input required id="text_tell" type="number" placeholder="Digite aqui o telefone..."/>
+                        </div>
+                        <div class="container_component_form">
+                            <label for="text_email">E-mail:</label>
+                            <input required id="text_email" type="email" placeholder="Digite aqui o email..."/>
+                        </div>
+                        <div class="container_component_form">
+                            <label for="text_endereco">Endereço:</label>
+                            <input required id="text_endereco" type="text" placeholder="Digite aqui o endereço..."/>
+                        </div>
+                        <div class="container_component_form">
+                            <label for="text_empresa">Empresa:</label>
+                            <input required id="text_empresa" type="text" placeholder="Digite aqui a empresa..."/>
+                        </div>
+                        <div class="container_component_form">
+                            <label for="text_ocupacao">Ocupação:</label>
+                            <input required id="text_ocupacao" type="text" placeholder="Digite aqui a ocupação..."/>
+                        </div>
+                        <input type="submit" value="Salvar" id="buttom_submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            Desenvolvido por Gabriel Augusto | MV3 Tecnologia.
+        </footer>
+        <script src="./scripts/new.js"></script>
+    </body>
+</html>

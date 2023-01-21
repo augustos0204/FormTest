@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #27c2ff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #092530;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+@keyframes neon-text {
+    from {
+        filter: drop-shadow(0 0 0 #27c2ff)
+    }
+    to {
+        filter: drop-shadow(0 0 5px #27c2ff)
+    }
+}
+
+@keyframes neon-box {
+    from {
+        box-shadow: 0 0 2px #27c2ff;
+    }
+    to {
+        box-shadow: 0 0 5px #27c2ff;
+    }
+}
+
+body {
+    background: linear-gradient(to right, #092530, #131313, #092530)
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #73d7ff;
+    animation: neon-text 1s alternate infinite ease-in-out;
+    margin-bottom: 20px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #0a3e53;
+    padding: 2px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+footer{
+    width: 100%;
+    height: 45px;
+    background-color: #1c1c1c;
+    color: #f0f8ff;
+    font-size: 1.0em;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+	background-color: #27c2ff;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	padding: 5px;
+	text-decoration:none;
+	text-shadow:0px 1px 5px #092530;
+    text-transform: uppercase;
+    transition: 0.5s;
+    user-select: none;
+}
+button:hover {
+	background-color:#0a3e53;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.container-component {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#container-menu{
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 5px black;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+}
+
+#container-menu figure{
+    width: 105px;
+    height: 45px;
+}
+
+#container-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 1.1em;
+    font-weight: bold;
+    color: #092530;
+}
+
+#container-header figure{
+    margin-right: 40px;
+}
+
+.container-page{
+    width: 100%;
+    min-height: 20vh;
+    height: auto;
+    max-height: 80vh;
+    padding-top: 100px;
+}
+
+#container-table-itens{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+#table-itens{
+    width: 100%;
+}
+
+#table-itens thead tr{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #092530;
+    user-select: none;
+}
+
+#table-itens thead tr th{
+    border-bottom: 2px solid #092530;
+    padding: 2px;
+}
+
+#table-itens tbody tr{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.0em;
+    color: #000000;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+#table-itens tbody tr:nth-child(even) {
+    background-color: #c9c9c9;
+}
+
+#table-itens tbody tr:hover{
+    background-color: #092530;
+    color: #fff;
+}
+
+#table-itens tbody td{
+    padding: 5px;
+    height: 45px;
+}
+
+#table-itens .ocupacao{
+    font-size: 0.9em;
+}
+
